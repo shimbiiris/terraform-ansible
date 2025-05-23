@@ -186,7 +186,7 @@ Application source: [https://github.com/shimbiiris/todo-micro-traefik.git](https
 To destroy all created resources:
 
 ```bash
-cd terraform-devops-stage-4a/terraform
+cd terraform-ansible/terraform
 terraform destroy
 ```
 
