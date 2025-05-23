@@ -1,0 +1,18 @@
+aws_region          = "us-west-2"                                  # AWS region
+aws_credentials_file = "~/.aws/credentials"                          # Path to your AWS credentials file
+aws_profile          = "default"                                     # AWS profile 
+vpc_cidr             = "10.0.0.0/16"                                # CIDR block for VPC
+public_subnet_cidr   = "10.0.1.0/24"                                # CIDR block for the public subnet
+instance_type        = "t2.micro"                                  # EC2 instance type
+ami_id               = "ami-0819a13b911cc3dd0"                      # Ubuntu 22.04 LTS in us-west-2
+public_key           = "~/.ssh/your-key.pub"                        # Path to your public SSH key
+private_key_path     = "~/.ssh/your-key"                            # Path to your private SSH key
+hosted_zone_id       = "YOUR_ROUTE53_HOSTED_ZONE_ID"                # Route 53 hosted zone ID
+domain_name          = "your-domain.com"                            # Domain name
+
+
+#Create another terraform.tfvars (without the example) file inside /terraform directory then make sure
+#you add your aws secret keys and generate a private and public key 
+
+# IMPORTANT: AMI IDs are region-specific. If you change regions, you must use the appropriate AMI ID.
+# Find the right AMI ID for your region: https://cloud-images.ubuntu.com/locator/ec2/ 

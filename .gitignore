@@ -1,0 +1,35 @@
+# OS specific files
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+*.bak
+*.tmp
+*~
+
+# SSH keys and certificates
+*.pem
+*.key
+*.pub
+*.crt
+*.cert
+*.csr
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Directories used by tools like coverage or pytest
+coverage/
+.coverage
+htmlcov/ 

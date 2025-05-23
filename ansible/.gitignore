@@ -1,0 +1,32 @@
+# Inventory files
+inventory.ini
+inventory.*
+!inventory.example
+
+# Secret variables 
+vars.yml
+*secrets*.yml
+*vault*.yml
+.vault_pass
+*vault_password*
+*vault-password*
+!vars.example.yml
+
+# Ansible retry files
+*.retry
+
+# Ansible roles downloaded from Galaxy
+roles/*/
+
+# Ansible collections
+collections/ansible_collections
+
+# Ansible logs
+*.log
+log/
+logs/
+
+# Ansible fact cache
+.ansible/tmp/
+.ansible/cache/
+.ansible/cp/
